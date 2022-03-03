@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Prepayment Risk</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+<style>
+      body, html {
+height: 100%;
+}
+
+* {
+box-sizing: border-box;
+}
+
+.navbar-default { margin : 0 !important; }
+
+.login {
+/* The image used */
+background-image: url("");
+
+/* Control the height of the image */
+min-height: 400px;
+
+/* Center and scale the image nicely */
+background-position: center;
+background-repeat: no-repeat;
+background-size: contain;
+position: relative;
+}
+
+/* Add styles to the form container */
+.col-md-5 {
+position: relative;
+margin-left: 0;
+margin: 5px;
+width: 300px;
+padding: 10px;
+background-color:white ;
+}
+
+/* Full-width input fields */
+input[type="number"] {
+width: 100%;
+padding: 10px;
+margin: 5px 0 15px 0;
+border: none;
+background: #f1f1f1;
+}
+
+input[type="number"]:focus {
+background-color: #ddd;
+outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+background-color: #bb70ec;
+color: white;
+padding: 10px 15px;
+border: none;
+cursor: pointer;
+width: 100%;
+opacity: 0.9;
+}
+
+.btn:hover {
+opacity: 1;
+}
+
+.forms{
+width: 50%;
+}
+
+.maindivision{
+  margin: 20px 30px 20px;
+}
+
+  </style>
+
+
+    
+</head>
+<body>
+</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About Us</a>
+        </li>
+     </div>
+</nav>
+    <div class="login">
+        <div class="maindivision">
+        <h1>Loan Prepayment Risk</h1>
+        <div class="row">
+              <span class="col-lg-6 forms">
+                <form action="/sub" method="POST">
+                  <div class="row">
+                      <div class="col-lg-6">
+                        <label for="CreditScore">Credit Score:</label><br>
+                        <input type="number" name="CreditScore" placeholder="CreditScore" required="required">
+                      </div>
+                      <div class="col-lg-6">
+                        <label for="IsFirstTime">Is First Time:</label><br>
+                        <input type="number" name="IsFirstTime" placeholder="IsFirstTime" required="required"><br>
+                      </div>
+                      <div class="col-lg-6">
+                        <label for="MIP">Mortgage Insurance Percentage:</label><br>
+                        <input type="number" name="MIP" placeholder="MIP" required="required"><br>
+                      </div>
+                      <div class="col-lg-6">
+                        <label for="Units">Units:</label><br>
+                        <input type="number" name="Units" placeholder="Units" required="required"><br>
+                      </div>
+                      <div class="col-lg-6">
+                        <label for="OCLTV">Combined Loan to Value Ratio:</label><br>
+                        <input type="number" name="OCLTV" placeholder="OCLTV" required="required"><br>
+                      </div>
+                      <div class="col-lg-6">
+                        <label for="DTI">Debt To Income Ratio:</label><br>
+                        <input type="number" name="DTI" placeholder="DTI" required="required"><br>
+                      </div>
+                      <div class="col-lg-6">
+                        <label for="OrigUPB">Unpaid Principal Balance:</label><br>
+                        <input type="number" name="OrigUPB" placeholder="OrigUPB" required="required"><br>
+                      </div>
+                      <div class="col-lg-6">
+                        <label for="LTV">Loan To Value Ratio:</label><br>
+                        <input type="number" name="LTV" placeholder="LTV" required="required"><br>
+                      </div>
+                      <div class="col-lg-6">
+                        <label for="OrigInterestRate">Interest Rate:</label><br>
+                        <input type="number" name="OrigInterestRate" placeholder="OrigInterestRate" step ="any" required="required"><br>
+                      </div>
+                      <div class="col-lg-6">
+                        <label for="OrigLoanTerm">Loan Term:</label><br>
+                        <input type="number" name="OrigLoanTerm" placeholder="OrigLoanTerm" required="required"><br>
+                      </div>
+                      <div class="col-lg-6">
+                        <label for="MonthsInRepayment">Months In Repayment:</label><br>
+                        <input type="number" name="MonthsInRepayment" placeholder="MonthsInRepayment" required="required"><br>
+                      </div>
+                        <button type="submit" class="btn">Predict</button>
+                    </div>
+
+
+              </form>
+            </span>
+              <span class="col-lg-6">
+                <img src="https://i.pinimg.com/564x/48/d9/e7/48d9e7156c81737951c333279f6a971a.jpg" alt="image" class="images">
+              </span>
+              
+
+        </div>
+
+
+
+
+    </div>
+         
+    
+</body>
+</html>
